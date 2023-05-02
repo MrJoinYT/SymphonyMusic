@@ -1,9 +1,9 @@
 module.exports = {
-	TOKEN: "MTA5OTI4NzIwODQwNzYxMzUzMA.GLF3PW.Abuf7HG_If7bYYUgM6JqYk02R5BAU4nAtjMKL0",
+	TOKEN: "${{ secrets.TOKEN }}",
 	ownerID: ["535451260183379988"], //write your discord user id. example: ["id"] or ["id1","id2"]
 	botInvite: "https://discord.com/api/oauth2/authorize?client_id=1099287208407613530&permissions=277028603968&scope=bot%20applications.commands", //write your discord bot invite.
 	supportServer: "https://discord.gg/xA9Y8AW", //write your discord bot support server invite.
-	mongodbURL: "mongodb+srv://dev0:bd1kIqEPwGPR3daF@cluster0.gn7gz7i.mongodb.net/?retryWrites=true&w=majority", //write your mongodb url.
+	mongodbURL: "${{ secrets.MONGODB }}", //write your mongodb url.
 	status: 'Cool Music',
 	commandsDir: './commands', //Please don't touch
 	language: "en", //en, tr, nl, pt, fr, ar, zh_TW, it
